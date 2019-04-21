@@ -172,6 +172,11 @@ section + #disqus_thread {
 
 // style all blockquotes, not just Bootstrap's default of class="blockquote"
 // see: node_modules/bootstrap/scss/_type.scss
+<<<<<<< HEAD
+=======
+// style all blockquotes, not just Bootstrap's default of class="blockquote"
+// see: node_modules/bootstrap/scss/_type.scss
+>>>>>>> try again
 // article blockquote {
 //   margin-bottom: $spacer;
 //   font-size: $blockquote-font-size;
@@ -183,6 +188,20 @@ article blockquote {
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
+<<<<<<< HEAD
+}
+article blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+article blockquote p {
+  display: inline;
+=======
+>>>>>>> try again
 }
 article blockquote:before {
   color: #ccc;
@@ -195,6 +214,12 @@ article blockquote:before {
 article blockquote p {
   display: inline;
 }
+
+// ensure that code text doesn't butt up against the background change
+article div.highlight {
+  padding: 5px 5px 0px 5px;
+}
+
 
 // ensure that code text doesn't butt up against the background change
 article div.highlight {
