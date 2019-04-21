@@ -1,16 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-style = "sha384-ppGgXRgsVbTTtLakptffN6TkuO4Kch+fA81OljgnGB8Tqqgh5qLd4XTs6NPemxMY"
-=======
-style = "sha384-G5B34w7DFTumWTswxYzTX7NWfbvQEg1HbFFEg6ItN03uTAAoS2qkPS/fu3LhuuSA"
-<<<<<<< HEAD
->>>>>>> Regenerate assets
-=======
-stylertl = "sha384-dagnrD/kTFcYqySe+3RarQ5X+ctARiVi8uLCNhk2FEbh6YrAPkiP+1hMM9pKx7FU"
->>>>>>> Add right-to-left version of CSS
-=======
-style = "sha384-G5B34w7DFTumWTswxYzTX7NWfbvQEg1HbFFEg6ItN03uTAAoS2qkPS/fu3LhuuSA"
-stylertl = "sha384-dagnrD/kTFcYqySe+3RarQ5X+ctARiVi8uLCNhk2FEbh6YrAPkiP+1hMM9pKx7FU"
->>>>>>> 1320168ebdaa87a1e04fdd7164bf7ad330c3ad1d
+style = "sha384-gC/qIVCSk89YqQq5utBxq8oyx7mEuIjuubqlwXlxse/snT/GI4ETfivckelmEGCf"
+stylertl = "sha384-zosS1f6mwKfC6kQhVuXNfDRxjiTiPbF9uuE4qDBP1TgSAkZdmxd0khMlFvTCGYey"
 cookieconsentcss = "sha384-6iYDyQZuuNT7DcPJGXx241czdv2+GDGUcXRiqw1iXrjgYMTorSetxFP3JCMQMwnR"
 cookieconsentjs = "sha384-PDjg2ZdS3khPzd53i18+7tzB32JVQfFMrTXYo21RqPgUmEVAPwIhxOUF/8sP79CS"
