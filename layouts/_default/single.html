@@ -25,12 +25,12 @@
   "wordCount": "{{ .WordCount }}",
   {{- $ISO8601 := "2006-01-02T15:04:05-07:00" }}
   {{- if not .PublishDate.IsZero }}
-  "datePublished": "{{ .PublishDate.Format $ISO8601 }}",
+  "datePublished": {{ .PublishDate.Format $ISO8601 }},
   {{- else }}
-  "datePublished": "{{ .Date.Format $ISO8601 }}",
+  "datePublished": {{ .Date.Format $ISO8601 }},
   {{- end }}
   {{- if not .Lastmod.IsZero }}
-  "dateModified": "{{ .Lastmod.Format $ISO8601 }}",
+  "dateModified": {{ .Lastmod.Format $ISO8601 }},
   {{- end }}
   {{- with .Site.Social.GooglePlus }}
   "publisher": "{{ printf "%s" . }}",
@@ -58,8 +58,8 @@
 
 <article class="blog-post">
   <header>
-    <h2 class="blog-post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
-    <p class="blog-post-meta"><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format $dateFormat }}</time> by {{ .Params.author | default .Site.Params.author }}{{ if or (.Params.categories) (.Params.tags) }} in {{ partial "meta-terms.html" . }}{{ end }}</p>
+    <h2 class="blog-post-title" dir="auto"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
+    <p class="blog-post-meta"><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format $dateFormat }}</time> {{ i18n "authoredBy" }} {{ .Params.author | default .Site.Params.author }}{{ if or (.Params.categories) (.Params.tags) }} {{ i18n "postedIn" }} {{ partial "meta-terms.html" . }}{{ end }}</p>
   </header>
   {{ .Content }}
 
